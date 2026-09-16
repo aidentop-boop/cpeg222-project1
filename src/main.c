@@ -109,7 +109,7 @@ int main(void)
         if (BTN_PORT->IDR & (1 << BTN_PIN))
         {
             //debounce delay
-            delay(125000);
+            delay(250000);
 
             //wait until btn is released
             while (BTN_PORT->IDR & (1<<BTN_PIN))
